@@ -7,9 +7,9 @@ import {
 } from "pankosmia-rcl";
 import { useContext, useState, useEffect } from "react";
 import { getJson } from "pankosmia-lib/http";
-import { WrapperNav } from "../components/bcvImagesMuncher/wrapperMuncher/WrapperNav";
+import { WrapperNav } from "../components/bcvVideosMuncher/wrapperMuncher/WrapperNav";
 import { Padding } from "@mui/icons-material";
-import BcvImagesViewerMuncher from "../components/bcvImagesMuncher/muncher/Viewer/BcvImagesViewerMuncher";
+import BcvVideosViewerMuncher from "../components/bcvVideosMuncher/muncher/Viewer/BcvVideosViewerMuncher";
 
 export function MuncherTest() {
   const { systemBcv } = useContext(bcvContext);
@@ -31,7 +31,7 @@ export function MuncherTest() {
           setCurrentBurrito([projectPath, entry]);
         } else {
           enqueueSnackbar(
-            `${doI18n("pages:core-contenthandler_bcv_images:error", i18nRef.current)}: ${fullMetadataResponse.status}`,
+            `${doI18n("pages:core-contenthandler_bcv_videos:error", i18nRef.current)}: ${fullMetadataResponse.status}`,
             { variant: "error" },
           );
         }
@@ -55,7 +55,7 @@ export function MuncherTest() {
         height: "98vh",
       }}
     >
-      <WrapperNav flavor={"x-bcvImages"} />
+      <WrapperNav flavor={"x-bcvVideos"} />
 
       <Box
         sx={{
@@ -67,7 +67,7 @@ export function MuncherTest() {
       >
         {metadata && (
           <Box sx={{ flex: 1, margin: 2 }}>
-            <BcvImagesViewerMuncher
+            <BcvVideosViewerMuncher
               metadata={metadata}
               debugRef={debugRef}
               i18nRef={i18nRef}

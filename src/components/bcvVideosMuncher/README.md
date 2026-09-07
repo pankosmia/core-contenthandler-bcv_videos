@@ -1,14 +1,14 @@
-# pankosmia-bcv_images-muncher
+# pankosmia-bcv_videos-muncher
 
-`pankosmia-bcv-images-muncher` provides reusable BCV-flavored muncher components for the Pankosmia ecosystem.
+`pankosmia-bcv-videos-muncher` provides reusable BCV-flavored muncher components for the Pankosmia ecosystem.
 
 This package contains a set of focused UI tools that can be integrated into Pankosmia clients when BCV editing or visualization capabilities are needed.
 
-> **Note:** This package does not contain everything available inside `pankosmia/core-contenthandler_bcv_images`. It only exposes reusable components that may or may not be used by other Pankosmia clients.
+> **Note:** This package does not contain everything available inside `pankosmia/core-contenthandler_bcv_videos`. It only exposes reusable components that may or may not be used by other Pankosmia clients.
 
 ## Component
 
-### `BCVImagesViewerMuncher`
+### `BCVVideosViewerMuncher`
 
 A component that allows users to view an BCV document.
 
@@ -26,7 +26,7 @@ Included:
 
 Not included:
 
-- The complete `pankosmia/core-contenthandler_bcv_images` application
+- The complete `pankosmia/core-contenthandler_bcv_videos` application
 - Application-specific features
 - Internal tools that are not intended for reuse
 

@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => {
     },
     build: isMuncher
       ? {
-          outDir: "src/components/bcvImagesMuncher/munchersPackageExport",
+          outDir: "src/components/bcvVideosMuncher/munchersPackageExport",
           emptyOutDir: true,
           sourcemap: true,
 
@@ -34,7 +34,7 @@ export default defineConfig(({ mode }) => {
               "pankosmia-rcl",
             ],
             output: {
-              name: "bcvImagesMunchersRcl",
+              name: "bcvVideosMunchersRcl",
               globals: {
                 react: "React",
                 "react-dom": "ReactDOM",
@@ -48,10 +48,10 @@ export default defineConfig(({ mode }) => {
           lib: {
             entry: path.resolve(
               __dirname,
-              "./src/components/bcvImagesMuncher/muncher/index.js",
+              "./src/components/bcvVideosMuncher/muncher/index.js",
             ),
             name: "pankosmiaRcl",
-            fileName: (format) => `bcv-images-muncher-rcl.${format}.js`,
+            fileName: (format) => `bcv-Videos-muncher-rcl.${format}.js`,
           },
         }
       : {
@@ -59,6 +59,6 @@ export default defineConfig(({ mode }) => {
           emptyOutDir: true,
           sourcemap: true,
         },
-    base: "/clients/core-contenthandler_bcv_images/",
+    base: "/clients/core-contenthandler_bcv_videos/",
   };
 });

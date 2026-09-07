@@ -1,10 +1,10 @@
 {
-  "name": "pankosmia-bcv_images-muncher",
+  "name": "pankosmia-bcv_videos-muncher",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/pankosmia/core-contenthandler_bcv_images",
-  "main": "munchersPackageExport/bcv-images-muncher-rcl.umd.js",
-  "module": "munchersPackageExport/bcv-images-muncher-rcl.es.js",
+  "homepage": "https://github.com/pankosmia/core-contenthandler_bcv_videos",
+  "main": "munchersPackageExport/bcv-Videos-muncher-rcl.umd.js",
+  "module": "munchersPackageExport/bcv-Videos-muncher-rcl.es.js",
   "files": [
     "munchersPackageExport"
   ],
