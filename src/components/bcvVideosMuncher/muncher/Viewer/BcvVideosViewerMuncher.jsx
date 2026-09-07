@@ -193,25 +193,28 @@ export default function BcvVideosViewerMuncher({
                   width: `${verseNotes.length * 100}%`,
                 }}
               >
-                {verseNotes.map((v, n) => (
-                  <div
-                    key={`${metadata.local_path}-${v}`}
-                    className="w-full h-full flex-shrink-0 flex items-center justify-center"
-                    style={{ width: `${100 / verseNotes.length}%` }}
-                  >
-                    <video
-                      ref={(el) => (videoRefs.current[n] = el)}
-                      controls
-                      className="max-w-full max-h-full w-auto h-auto object-contain"
+                {verseNotes.map((v, n) => {
+                  if (!v) return null;
+                  return (
+                    <div
+                      key={`${metadata.local_path}-${v}`}
+                      className="w-full h-full flex-shrink-0 flex items-center justify-center"
+                      style={{ width: `${100 / verseNotes.length}%` }}
                     >
-                      <source
-                        src={`/api/burrito/ingredient/bytes/${metadata.local_path}?ipath=${v.slice(2)}.mp4`}
-                        type="video/mp4"
-                      />
-                      {"video"}
-                    </video>
-                  </div>
-                ))}
+                      <video
+                        ref={(el) => (videoRefs.current[n] = el)}
+                        controls
+                        className="max-w-full max-h-full w-auto h-auto object-contain"
+                      >
+                        <source
+                          src={`/api/burrito/ingredient/bytes/${metadata.local_path}?ipath=${v.slice(2)}.mp4`}
+                          type="video/mp4"
+                        />
+                        {"video"}
+                      </video>
+                    </div>
+                  );
+                })}
               </div>
 
               {/* Navigation buttons for the slider */}
