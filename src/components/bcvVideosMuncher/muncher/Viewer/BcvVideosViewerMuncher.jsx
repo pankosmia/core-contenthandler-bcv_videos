@@ -2,25 +2,26 @@ import { useEffect, useState, useContext, useRef } from "react";
 import { Box, Stack } from "@mui/material";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
-import {
-  i18nContext as I18nContext,
-  debugContext as DebugContext,
-  bcvContext as BcvContext,
-} from "pankosmia-rcl";
 import { getText } from "pankosmia-lib/http";
 import TextDir from "../helpers/TextDir";
+import { doI18n } from "pankosmia-lib/i18n";
 
-function VideoViewer({ metadata, reference }) {
-  return (
-    <Stack>
-      <img
-        src={`/api/burrito/ingredient/bytes/${metadata.local_path}?ipath=${reference.slice(2)}.jpg`}
-        alt="resource image"
-      />
-    </Stack>
-  );
-}
-function BcvImagesViewerMuncher({ metadata }) {
+// function VideoViewer({ metadata, reference }) {
+//   return (
+//     <Stack>
+//       <img
+//         src={`/api/burrito/ingredient/bytes/${metadata.local_path}?ipath=${reference.slice(2)}.jpg`}
+//         alt="resource image"
+//       />
+//     </Stack>
+//   );
+// }
+export default function BcvVideosViewerMuncher({
+  metadata,
+  systemBcv,
+  debugRef,
+  i18nRef,
+}) {
   const [ingredient, setIngredient] = useState([]);
   const [verseNotes, setVerseNotes] = useState([]);
   const [textDir, setTextDir] = useState(
@@ -28,10 +29,6 @@ function BcvImagesViewerMuncher({ metadata }) {
       ? metadata.script_direction.toLowerCase()
       : undefined,
   );
-
-  const { systemBcv } = useContext(BcvContext);
-  const { debugRef } = useContext(DebugContext);
-  const { i18nRef } = useContext(I18nContext);
 
   const sbScriptDir = metadata?.script_direction
     ? metadata.script_direction.toLowerCase()
@@ -275,5 +272,3 @@ function BcvImagesViewerMuncher({ metadata }) {
     </Box>
   );
 }
-
-export default BcvImagesViewerMuncher;

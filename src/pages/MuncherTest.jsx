@@ -9,6 +9,7 @@ import { useContext, useState, useEffect } from "react";
 import { getJson } from "pankosmia-lib/http";
 import { WrapperNav } from "../components/bcvVideosMuncher/wrapperMuncher/WrapperNav";
 import { Padding } from "@mui/icons-material";
+import { BcvImagesViewerMuncher } from "../components/bcvVideosMuncher/muncher";
 import BcvVideosViewerMuncher from "../components/bcvVideosMuncher/muncher/Viewer/BcvVideosViewerMuncher";
 
 export function MuncherTest() {
@@ -55,7 +56,7 @@ export function MuncherTest() {
         height: "98vh",
       }}
     >
-      <WrapperNav flavor={"x-bcvVideos"} />
+      <WrapperNav flavor={"x-bcvvideo"} />
 
       <Box
         sx={{
