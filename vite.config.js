@@ -59,6 +59,6 @@ export default defineConfig(({ mode }) => {
           emptyOutDir: true,
           sourcemap: true,
         },
-    base: "/clients/core-contenthandler_bcv_videos/",
+    base: "/clients/core-contenthandler-bcv_videos/",
   };
 });

@@ -2,7 +2,7 @@
   "name": "pankosmia-bcv_videos-muncher",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/pankosmia/core-contenthandler_bcv_videos",
+  "homepage": "https://github.com/pankosmia/core-contenthandler-bcv_videos",
   "main": "munchersPackageExport/bcv-Videos-muncher-rcl.umd.js",
   "module": "munchersPackageExport/bcv-Videos-muncher-rcl.es.js",
   "files": [

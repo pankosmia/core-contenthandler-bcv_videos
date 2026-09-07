@@ -32,7 +32,7 @@ export function MuncherTest() {
           setCurrentBurrito([projectPath, entry]);
         } else {
           enqueueSnackbar(
-            `${doI18n("pages:core-contenthandler_bcv_videos:error", i18nRef.current)}: ${fullMetadataResponse.status}`,
+            `${doI18n("pages:core-contenthandler-bcv_videos:error", i18nRef.current)}: ${fullMetadataResponse.status}`,
             { variant: "error" },
           );
         }

@@ -1,5 +1,5 @@
 {
-  "id": "core-contenthandler_bcv_videos",
+  "id": "core-contenthandler-bcv_videos",
   "exclude_from_menu": true,
   "exclude_from_dashboard": true,
   "minServerVersion": "0.12.14",
@@ -10,10 +10,10 @@
 
   "i18n": {
     "title": {
-      "en": "core-contenthandler_bcv_videos"
+      "en": "core-contenthandler-bcv_videos"
     },
     "summary": {
-      "en": "core-contenthandler_bcv_videos"
+      "en": "core-contenthandler-bcv_videos"
     },
     "stub_content": {
       "en": "Content goes here"
