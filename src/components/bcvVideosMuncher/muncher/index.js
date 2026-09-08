@@ -1,3 +1,3 @@
-import BcvImagesViewerMuncher from "./Viewer/BcvVideosViewerMuncher";
+import BcvVideosViewerMuncher from "./Viewer/BcvVideosViewerMuncher";
 
-export {BcvImagesViewerMuncher}
+export { BcvVideosViewerMuncher };
