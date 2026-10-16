@@ -1,24 +1,15 @@
 {
   "name": "core-contenthandler-bcv_videos",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "homepage": "/clients/core-contenthandler-bcv_videos",
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^9.4.0",
-    "@mui/material": "^9.3.1",
     "font-detect-rhl": "^1.1.10",
     "interactjs": "^1.10.28",
     "md5": "^2.3.0",
-    "notistack": "^3.0.2",
     "pankosmia-lib": "^0.0.3",
-    "pankosmia-rcl": "0.7.1",
     "pithekos-lib": "^0.11.20",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.18.1",
     "snowball-stemmer.jsx": "^0.2.3"
   },
   "devDependencies": {
@@ -28,10 +19,15 @@
     "vite": "^6.0.7"
   },
   "peerDependencies": {
-    "notistack": "^3.0.2",
-    "pankosmia-rcl": "^0.7.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/icons-material": "9.3.1",
+    "@mui/material": "9.3.1",
+    "notistack": "3.0.2",
+    "pankosmia-rcl": "0.8.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-router-dom": "7.9.4"
   },
   "scripts": {
     "publish": "pnpm run build:package  && cd ./src/components/bcvVideosMuncher && npm publish",
