@@ -2,7 +2,6 @@ import { createRoot } from "react-dom/client";
 import { SpaContainer } from "pankosmia-rcl";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./App";
 import { MaterialDesignContent, SnackbarProvider } from "notistack";
 import { styled } from "@mui/material";
 import { MuncherTest } from "./pages/MuncherTest";

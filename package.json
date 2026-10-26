@@ -8,7 +8,6 @@
     "interactjs": "^1.10.28",
     "md5": "^2.3.0",
     "pankosmia-lib": "^0.0.5",
-    "pithekos-lib": "^0.11.20",
     "react-markdown": "^10.1.0",
     "snowball-stemmer.jsx": "^0.2.3"
   },
