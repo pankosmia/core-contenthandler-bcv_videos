@@ -9,10 +9,6 @@ import { MuncherTest } from "./pages/MuncherTest";
 const router = createHashRouter([
   {
     path: "/",
-    element: <App />,
-  },
-  {
-    path: "/MuncherTest",
     element: <MuncherTest />,
   },
 ]);
