@@ -4,12 +4,12 @@ import {
   bcvContext,
   debugContext,
   i18nContext,
+  Header,
 } from "pankosmia-rcl";
 import { useContext, useState, useEffect } from "react";
 import { getJson } from "pankosmia-lib/http";
 import { WrapperNav } from "../components/bcvVideosMuncher/wrapperMuncher/WrapperNav";
 import { Padding } from "@mui/icons-material";
-import { BcvImagesViewerMuncher } from "../components/bcvVideosMuncher/muncher";
 import BcvVideosViewerMuncher from "../components/bcvVideosMuncher/muncher/Viewer/BcvVideosViewerMuncher";
 
 export function MuncherTest() {
@@ -52,20 +52,22 @@ export function MuncherTest() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        margin: 3,
-        height: "98vh",
+        height: "100%",
+        overflow: "hidden",
       }}
     >
-      <WrapperNav flavor={"x-bcvvideo"} />
+      <Box>
+        <Header
+          titleKey={"pages:core-contenthandler-bcv_videos:titleMuncherTest"}
+          currentId="content"
+          requireNet={false}
+        />
+      </Box>
+      <Box sx={{ paddingLeft: 2, paddingTop: 2, flexShrink: 0 }}>
+        <WrapperNav flavor={"x-bcvvideo"} />
+      </Box>
 
-      <Box
-        sx={{
-          display: "flex",
-          width: "100%",
-          overflowY: "scroll",
-          paddingTop: 5,
-        }}
-      >
+      <Box sx={{ flex: 1, minHeight: 0, overflowY: "auto" }}>
         {metadata && (
           <Box sx={{ flex: 1, margin: 2 }}>
             <BcvVideosViewerMuncher
