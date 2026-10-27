@@ -1,8 +1,6 @@
 {
   "id": "core-contenthandler-bcv_videos",
-  "exclude_from_menu": true,
-  "exclude_from_dashboard": true,
-  "minServerVersion": "0.12.14",
+  "minServerVersion": "0.20.3",
   "require": {
     "net": false,
     "debug": true
@@ -18,7 +16,9 @@
     "stub_content": {
       "en": "Content goes here"
     },
-
+    "titleMuncherTest": {
+      "en": "Flavor x-bcvvideo"
+    },
     "close": {
       "en": "Close",
       "es": "Cerrar",
