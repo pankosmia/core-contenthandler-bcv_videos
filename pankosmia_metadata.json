@@ -5,7 +5,7 @@
     "net": false,
     "debug": true
   },
-  "enpoints": {
+  "endpoints": {
     "x-bcvvideo": {}
   },
   "i18n": {
