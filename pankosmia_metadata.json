@@ -5,7 +5,9 @@
     "net": false,
     "debug": true
   },
-
+  "endpoints": {
+    "x-bcvvideo": {}
+  },
   "i18n": {
     "title": {
       "en": "core-contenthandler-bcv_videos"
